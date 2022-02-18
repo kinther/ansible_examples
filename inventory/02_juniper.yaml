@@ -28,3 +28,13 @@ access:
     ny-access-rtr2:
     sf-access-rtr1:
     sf-access-rtr2:
+
+junos:
+  children:
+    border:
+    access:
+    core:
+  vars:
+    ansible_network_os: junos
+    junos_timeout: 600
+    ansible_port: 22
