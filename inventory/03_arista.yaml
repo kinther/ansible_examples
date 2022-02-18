@@ -1,0 +1,14 @@
+####################
+##     Arista     ##
+####################
+
+rack-switches:
+  se-sw1:
+  ny-sw1:
+  sf-sw1:
+
+eos:
+  children:
+    rack-switches:
+  vars:
+    ansible_network_os: eos
