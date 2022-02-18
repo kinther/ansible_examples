@@ -1,0 +1,1 @@
+Mostly to give a good reference to how an inventory should be built.
