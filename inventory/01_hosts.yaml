@@ -28,6 +28,10 @@ seattle:
       ansible_ssh_host: 192.168.1.16
       model: mx104
       mac: aa:bb:cc:dd:ee:f6
+    se-sw1:
+      ansible_ssh_host: 192.168.1.21
+      model: DCS-7010T-48
+      mac: aa:bb:cc:dd:ee:f7
   vars:
     pop: seattle
 
@@ -61,6 +65,10 @@ newyork:
       ansible_ssh_host: 192.168.2.16
       model: mx104
       mac: aa:bb:cc:dd:ee:e6
+    ny-sw1:
+      ansible_ssh_host: 192.168.2.21
+      model: DCS-7010T-48
+      mac: aa:bb:cc:dd:ee:e7
   vars:
     pop: newyork
 
@@ -96,5 +104,9 @@ sanfran:
       ansible_ssh_host: 192.168.3.16
       model: mx104
       mac: aa:bb:cc:dd:ee:d6
+    se-sw1:
+      ansible_ssh_host: 192.168.3.21
+      model: DCS-7010T-48
+      mac: aa:bb:cc:dd:ee:d7
   vars:
     pop: sanfran
