@@ -1,0 +1,11 @@
+#######################
+##     Locations     ##
+#######################
+
+northamerica:
+  children:
+    seattle:
+    newyork:
+    sanfran:
+  vars:
+    region: northamerica
