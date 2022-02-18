@@ -1,0 +1,30 @@
+####################
+##     Juniper    ##
+####################
+
+border:
+  hosts:
+    se-border-rtr1:
+    se-border-rtr2:
+    ny-border-rtr1:
+    ny-border-rtr2:
+    sf-border-rtr1:
+    sf-border-rtr2:
+
+core:
+  hosts:
+    se-core-rtr1:
+    se-core-rtr2:
+    ny-core-rtr1:
+    ny-core-rtr2:
+    sf-core-rtr1:
+    sf-core-rtr2:
+
+access:
+  hosts:
+    se-access-rtr1:
+    se-access-rtr2:
+    ny-access-rtr1:
+    ny-access-rtr2:
+    sf-access-rtr1:
+    sf-access-rtr2:
