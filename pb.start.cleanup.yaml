@@ -1,0 +1,21 @@
+---
+
+# Used primarily to ensure we don't have conflicting old/new files
+- name: Make build directories for new configuration files
+  hosts: all
+  connection: local
+  tags:
+    - always
+  tasks:
+
+    # Start from scratch by removing all old directories
+    - name: Remove old directories if present
+      file:
+        path={{ temp_dir }} state=absent
+      run_once: true
+
+    # Create the directories to hold our new configuration files
+    - name: Create new directories
+      file:
+        path={{ temp_dir }}/{{ inventory }}/ {{ item }}/tmp state=directory
+      run_once: true
